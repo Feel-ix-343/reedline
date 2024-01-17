@@ -50,7 +50,7 @@ use {
 // a POLL_WAIT of zero means that every single event is treated as soon as it
 // arrives. This doesn't allow for the possibility of more than 1 event
 // happening at the same time.
-const POLL_WAIT: u64 = 1;
+const POLL_WAIT: u64 = 0;
 // Since a paste event is multiple Event::Key events happening at the same time, we specify
 // how many events should be in the crossterm_events vector before it is considered
 // a paste. 10 events in 10 milliseconds is conservative enough (unlikely somebody
